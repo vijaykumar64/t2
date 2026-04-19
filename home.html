@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .input-group label {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .input-group input:focus {
+      border-color: #4facfe;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #4facfe;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background: #00c6ff;
+    }
+
+    .extra-links {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .extra-links a {
+      text-decoration: none;
+      color: #4facfe;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login</h2>
+
+    <form>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <div class="extra-links">
+      <p><a href="#">Forgot Password?</a></p>
+      <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
